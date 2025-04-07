@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ByteMe Coin - A criptomoeda que já bateu metas e conta com o apoio da FAESA. Criada por Jerri Stark, formado em Harvard, e disponível para compra com qualquer carteira." />
+  <meta name="keywords" content="ByteMe, Criptomoeda, Jerri Stark, FAESA, Harvard, Web3, Raydium, Jup.ag" />
+  <title>ByteMe Coin 🚀</title>
+  <style>
+    /* Reset e base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Courier New", Courier, monospace;
+      background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+      color: #00ffcc;
+      text-align: center;
+      padding: 2rem;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Cabeçalho */
+    header {
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1.5s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 2s ease;
+    }
+
+    /* Botões e links */
+    .btn {
+      background: #00ffcc;
+      color: #0f0f0f;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      margin: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.2s, background 0.3s;
+      display: inline-block;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: #00cc99;
+    }
+
+    /* Seção de redes sociais */
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .socials a {
+      border: 1px solid #00ffcc;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .socials a:hover {
+      background: #00ffcc;
+      color: #0f0f0f;
+    }
+
+    /* Animações */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes counterAnim {
+      from { opacity: 0; transform: scale(0.5); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .animated {
+      animation: counterAnim 1s ease forwards;
+    }
+
+    /* Seção de contadores */
+    .counters {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .counter {
+      font-size: 2rem;
+      padding: 1rem;
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      width: 150px;
+    }
+
+    /* Seção de imagens */
+    .media-gallery {
+      margin: 2rem 0;
+    }
+    .media-gallery img {
+      max-width: 90%;
+      margin: 1rem auto;
+      border: 3px solid #00ffcc;
+      border-radius: 10px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    /* Seção de vídeos com legendas */
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin: 2rem 0;
+    }
+    .video-box {
+      max-width: 600px;
+      width: 100%;
+    }
+    .video-box video {
+      width: 100%;
+      border: 3px solid #00ffcc;
+      border-radius: 10px;
+      animation: fadeInDown 1.5s ease;
+    }
+    .video-caption {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* Seção de Informações/Metas */
+    .info {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .info h2 {
+      margin-bottom: 1rem;
+    }
+    .info p {
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    /* Seção de Compra */
+    .buy-section {
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 1px solid #00ffcc;
+      border-radius: 10px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .buy-section h2 {
+      margin-bottom: 1rem;
+    }
+    .buy-section p {
+      margin-bottom: 1rem;
+    }
+    .buy-buttons a {
+      margin: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 ByteMe Coin</h1>
+    <p>A criptomoeda que já bateu metas e conta com o apoio da FAESA. Criada por Jerri Stark, formado em Harvard.</p>
+  </header>
+
+  <!-- Botões de compra -->
+  <div class="buy-buttons">
+    <a class="btn" href="https://raydium.io/swap/?inputMint=Bytd6tDfiNwZ7KnLYMjCu4Gwdb4qLP1CY5LdVBn6VDX5&outputMint=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v" target="_blank">
+      🪙 COMPRE VIA RAYDIUM
+    </a>
+    <a class="btn" href="https://jup.ag/trigger/USDC-Bytd6tDfiNwZ7KnLYMjCu4Gwdb4qLP1CY5LdVBn6VDX5" target="_blank">
+      🪙 COMPRE VIA JUP.AG
+    </a>
+  </div>
+
+  <!-- Integração Web3: Botão de conectar wallet -->
+  <button class="btn" id="connectWallet">Conectar Wallet</button>
+
+  <!-- Seção Social -->
+  <div class="socials">
+    <a href="https://www.instagram.com/ceojerrybyteme/" target="_blank">📸 Instagram</a>
+    <a href="https://x.com/ByteMeCoinOFC" target="_blank">🐦 Twitter/X</a>
+    <a href="https://www.youtube.com/@ByteMe-k1d" target="_blank">📺 YouTube</a>
+    <a href="https://chat.whatsapp.com/DFbWzTen4ifFZXy2kTSUVM" target="_blank">💬 WhatsApp</a>
+    <a href="mailto:bytemecoinofficial@gmail.com">📧 Email</a>
+    <a href="https://discord.gg/ZyEwk8q6" target="_blank">💻 Discord</a>
+  </div>
+
+  <!-- Seção para compra via site -->
+  <section class="buy-section">
+    <h2>Comprar ByteMe com Qualquer Carteira</h2>
+    <p>Utilize os links acima para comprar ByteMe usando qualquer carteira compatível. Se preferir, entre em contato conosco para mais informações ou para comprar diretamente pelo site.</p>
+  </section>
+
+  <!-- Contadores com animação -->
+  <section class="counters">
+    <div class="counter animated" data-target="1000000">0</div>
+    <div class="counter animated" data-target="2500">0</div>
+    <div class="counter animated" data-target="150">0</div>
+  </section>
+  <p>Contadores representando metas, investidores e parceiros.</p>
+
+  <!-- Vídeos centralizados com legendas -->
+  <section class="video-container">
+    <div class="video-box">
+      <video controls muted loop>
+        <source src="https://bafybeib3oki3f4vc2brp5nmdzqp5wdg333ryq35x7lqgv5hirurftnudwe.ipfs.w3s.link/invideo-ai-1080%20Byteme_%20O%20Her%C3%B3i%20das%20Criptomoedas!%202025-04-04.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <div class="video-caption">
+        <strong>O Herói das Criptomoedas!</strong> – Apresenta ByteMe como o inovador herói do universo cripto, destacando sua capacidade de revolucionar o mercado financeiro.
+      </div>
+    </div>
+    <div class="video-box">
+      <video controls muted loop>
+        <source src="https://bafybeiazvnles3a7oi7ld7t3ezbrq25k4vmruw2iqiqejyfm5gjyxgyzr4.ipfs.w3s.link/invideo-ai-1080%20VOC%C3%8A%20RINDO%20AGORA%E2%80%A6%20BYTE%20ME%20DEPOIS!%202025-04-04.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <div class="video-caption">
+        <strong>VOCÁ RINDO AGORA… BYTE ME DEPOIS!</strong> – Enfatiza a atitude confiante de ByteMe e convida os investidores a não perderem essa oportunidade.
+      </div>
+    </div>
+    <div class="video-box">
+      <video controls muted loop>
+        <source src="https://bafybeiauv27k2w6cldvgd2ey3x5stujvfyuu2nqdhyfriqblrvbxxliliu.ipfs.w3s.link/invideo-ai-1080%20ByteMe%20%E2%80%94%20O%20Trailer%20Que%20Seu%20Algoritmo%20Imp%202025-04-04%20(1).mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <div class="video-caption">
+        <strong>O Trailer Que Seu Algoritmo Imp</strong> – Demonstra a integração tecnológica de ByteMe, ressaltando seu potencial inovador no cenário digital.
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Informações e Metas -->
+  <section class="info">
+    <h2>Metas e Informações do Projeto</h2>
+    <p>A ByteMe Coin já bateu diversas metas e conta com o apoio da FAESA. O criador, Jerri Stark, que fez curso em Harvard, está empenhado em realizar eventos e premiações. Entre as iniciativas estão:</p>
+    <ul>
+      <li>Lançamento de um aplicativo exclusivo da ByteMe com carteira digital.</li>
+      <li>Depoimentos e opiniões dos compradores, com espaço em fóruns como DC, Reggit, entre outros.</li>
+      <li>Contratações de profissionais com remuneração de até US$10.000 dependendo da área (TI, ciência da computação, engenharia da computação e mais).</li>
+      <li>Premiações em dinheiro, descontos em compras online e promoções de hardware.</li>
+      <li>Investidores poderão fazer parte deste projeto inovador que pode transformar participantes em milionários, tribilionários ou até bilionários.</li>
+    </ul>
+    <p>Investidores, participem deste projeto! Abracem a ByteMe e desfrutem de sucesso, reconhecimento, dinheiro, carros, prazer e muito mais. Se você quer ser BYTE, venha com a gente ou se arrependerá.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Criado por <strong>Jerri Stark</strong> com ⚡ ByteMe Power.
+  </footer>
+
+  <!-- Scripts: Contador, Web3 e animações -->
+  <script>
+    // Contadores animados
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if(count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+
+    // Integração Web3 (Placeholder para MetaMask)
+    const connectWalletBtn = document.getElementById('connectWallet');
+    connectWalletBtn.addEventListener('click', async () => {
+      if (window.ethereum) {
+        try {
+          await window.ethereum.request({ method: 'eth_requestAccounts' });
+          alert('Wallet conectada com sucesso!');
+        } catch (error) {
+          alert('Erro ao conectar a wallet.');
+        }
+      } else {
+        alert('MetaMask não encontrada. Instale a extensão MetaMask.');
+      }
+    });
+  </script>
+</body>
+</html>
